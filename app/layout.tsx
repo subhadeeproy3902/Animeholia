@@ -11,6 +11,20 @@ const dmSans = DM_Sans({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Animeholia",
   description: "All your favorite anime in one place. Be an animeholic!",
+  openGraph: {
+    type: "website",
+    url: "https://animeholia.vercel.app/",
+    title: "Animeholia",
+    description: "All your favorite anime in one place. Be an animeholic!",
+    images: [
+      {
+        url: "https://i.postimg.cc/wBsNbv1J/anime.png",
+        width: 1200,
+        height: 630,
+        alt: "",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
