@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { motion } from "framer-motion";
 import { MotionDiv } from "./MotionDiv";
 
@@ -45,7 +44,7 @@ function AnimeCard({ anime, index }: Prop) {
       className="max-w-sm rounded relative w-full"
     >
       <div className="relative w-full h-[320px]">
-        <Image
+        <img
           src={`https://shikimori.one${anime.image.original}`}
           alt={anime.name}
           fill
@@ -65,7 +64,7 @@ function AnimeCard({ anime, index }: Prop) {
         </div>
         <div className="flex gap-4 items-center">
           <div className="flex flex-row gap-2 items-center">
-            <Image
+            <img
               src="./episodes.svg"
               alt="episodes"
               width={20}
@@ -77,7 +76,7 @@ function AnimeCard({ anime, index }: Prop) {
             </p>
           </div>
           <div className="flex flex-row gap-2 items-center">
-            <Image
+            <img
               src="./star.svg"
               alt="star"
               width={18}
